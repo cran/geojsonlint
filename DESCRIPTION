@@ -3,10 +3,10 @@ Title: Tools for Validating 'GeoJSON'
 Description: Tools for linting 'GeoJSON'. Includes tools for interacting with the
     online tool <http://geojsonlint.com>, the 'Javascript' library 'geojsonhint'
     (<https://www.npmjs.com/package/geojsonhint>), and validating against a
-    GeoJSON schema via the 'Javascript' library
+    'GeoJSON' schema via the 'Javascript' library
     (<https://www.npmjs.com/package/is-my-json-valid>). Some tools work locally
     while others require an internet connection.
-Version: 0.1.0
+Version: 0.2.0
 License: MIT + file LICENSE
 Authors@R: c(
     person("Scott", "Chamberlain", role = c("aut", "cre"), email = "myrmecocystus@gmail.com"),
@@ -24,11 +24,11 @@ Imports: httr (>= 1.1.0), jsonlite (>= 0.9.19), jsonvalidate (>=
 Suggests: testthat, knitr, rmarkdown (>= 0.9.6), covr
 RoxygenNote: 5.0.1
 NeedsCompilation: no
-Packaged: 2016-06-14 16:44:26 UTC; sacmac
+Packaged: 2016-11-02 23:04:55 UTC; sacmac
 Author: Scott Chamberlain [aut, cre],
   Andy Teucher [aut],
   Tom MacWright [cph] (geojsonhint Javascript library),
   Mads Kristensen [cph] (geojson schema)
 Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
 Repository: CRAN
-Date/Publication: 2016-06-14 20:34:37
+Date/Publication: 2016-11-03 00:34:27
