@@ -2,8 +2,8 @@
 % Please edit documentation in R/geojsonlint-package.r
 \docType{package}
 \name{geojsonlint-package}
-\alias{geojsonlint}
 \alias{geojsonlint-package}
+\alias{geojsonlint}
 \title{\strong{GeoJSON Linting}}
 \description{
 \strong{GeoJSON Linting}
@@ -11,17 +11,17 @@
 \section{Package API}{
 
 \itemize{
- \item \code{\link{geojson_hint}} - Checks validity of geojson using the Javascript library
- \code{geojsonhint}
- \item \code{\link{geojson_lint}} - Checks validity of geojson using the web service at
- \url{http://geojsonlint.com}
- \item \code{\link{geojson_validate}} - Checks validity of geojson using a GeoJSON schema
- and the Javascript library \code{is-my-json-valid}
+\item \code{\link[=geojson_hint]{geojson_hint()}} - Checks validity of geojson using the Javascript library
+\code{geojsonhint}
+\item \code{\link[=geojson_lint]{geojson_lint()}} - Checks validity of geojson using the web service at
+\url{http://geojsonlint.com}
+\item \code{\link[=geojson_validate]{geojson_validate()}} - Checks validity of geojson using a GeoJSON schema
+and the Javascript library \code{is-my-json-valid}
 }
 }
+
 \author{
 Scott Chamberlain \email{myrmecocystus@gmail.com}
 
 Andy Teucher \email{andy.teucher@gmail.com}
 }
-

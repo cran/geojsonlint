@@ -10,7 +10,7 @@ knitr::opts_chunk$set(
 #  install.packages("geojsonlint")
 
 ## ----eval=FALSE----------------------------------------------------------
-#  devtools::install_github("ropenscilabs/geojsonlint")
+#  remotes::install_github("ropensci/geojsonlint")
 
 ## ------------------------------------------------------------------------
 library("geojsonlint")
@@ -36,17 +36,17 @@ geojson_hint('{"type": "FooBar"}')
 geojson_validate('{ "type": "FeatureCollection" }')
 
 ## ----eval = FALSE--------------------------------------------------------
-#  geojson_lint('{"type": "FooBar"}', verbose = TRUE)
+#  geojson_lint('{"type": "FooBar"}', inform = TRUE)
 #  #> [1] FALSE
 #  #> attr(,"errors")
 #  #>                                 message status
 #  #> 1 "FooBar" is not a valid GeoJSON type.  error
 
 ## ------------------------------------------------------------------------
-geojson_hint('{"type": "FooBar"}', verbose = TRUE)
+geojson_hint('{"type": "FooBar"}', inform = TRUE)
 
 ## ------------------------------------------------------------------------
-geojson_validate('{ "type": "FeatureCollection" }', verbose = TRUE)
+geojson_validate('{ "type": "FeatureCollection" }', inform = TRUE)
 
 ## ----eval=FALSE----------------------------------------------------------
 #  geojson_lint('{"type": "FooBar"}', error = TRUE)

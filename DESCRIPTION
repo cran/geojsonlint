@@ -6,29 +6,38 @@ Description: Tools for linting 'GeoJSON'. Includes tools for interacting with th
     'GeoJSON' schema via the 'Javascript' library
     (<https://www.npmjs.com/package/is-my-json-valid>). Some tools work locally
     while others require an internet connection.
-Version: 0.2.0
+Version: 0.3.0
 License: MIT + file LICENSE
 Authors@R: c(
-    person("Scott", "Chamberlain", role = c("aut", "cre"), email = "myrmecocystus@gmail.com"),
-    person("Andy", "Teucher", role = "aut", email = "andy.teucher@gmail.com"),
-    person("Tom", "MacWright", role = "cph", comment = "geojsonhint Javascript library"),
-    person("Mads", "Kristensen", role = "cph", comment = "geojson schema")
+    person("Scott", "Chamberlain", role = c("aut", "cre"),
+        email = "myrmecocystus@gmail.com",
+        comment = c(ORCID="0000-0003-1444-9135")),
+    person("Andy", "Teucher", role = "aut",
+        email = "andy.teucher@gmail.com"),
+    person("Tom", "MacWright", role = "cph",
+        comment = "geojsonhint Javascript library"),
+    person("Mads", "Kristensen", role = "cph",
+        comment = "geojson schema")
     )
-URL: https://github.com/ropenscilabs/geojsonlint
-BugReports: http://www.github.com/ropenscilabs/geojsonlint/issues
+URL: https://github.com/ropensci/geojsonlint
+BugReports: https://github.com/ropensci/geojsonlint/issues
 LazyData: true
 VignetteBuilder: knitr
+Encoding: UTF-8
 Depends: R (>= 2.10)
-Imports: httr (>= 1.1.0), jsonlite (>= 0.9.19), jsonvalidate (>=
+Imports: crul (>= 0.7.0), jsonlite (>= 0.9.19), jsonvalidate (>=
         1.0.0), V8
-Suggests: testthat, knitr, rmarkdown (>= 0.9.6), covr
-RoxygenNote: 5.0.1
+Suggests: testthat, knitr, rmarkdown (>= 0.9.6)
+RoxygenNote: 6.1.1
+X-schema.org-applicationCategory: Geospatial
+X-schema.org-keywords: geojson, geospatial, lint, hint, data, schema
+X-schema.org-isPartOf: https://ropensci.org
 NeedsCompilation: no
-Packaged: 2016-11-02 23:04:55 UTC; sacmac
-Author: Scott Chamberlain [aut, cre],
+Packaged: 2019-02-08 18:00:54 UTC; sckott
+Author: Scott Chamberlain [aut, cre] (<https://orcid.org/0000-0003-1444-9135>),
   Andy Teucher [aut],
   Tom MacWright [cph] (geojsonhint Javascript library),
   Mads Kristensen [cph] (geojson schema)
 Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
 Repository: CRAN
-Date/Publication: 2016-11-03 00:34:27
+Date/Publication: 2019-02-08 18:43:19 UTC
