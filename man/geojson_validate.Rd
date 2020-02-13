@@ -30,7 +30,7 @@ Validate GeoJSON using is-my-json-valid Javascript library
 \details{
 Sometimes you may get a response that your input GeoJSON is
 invalid, but get a somewhat unhelpful error message, e.g.,
-\code{no (or more than one) schemas match}. See
+\verb{no (or more than one) schemas match}. See
 \url{https://github.com/ropensci/geojsonlint/issues/7#issuecomment-219881961}.
 We'll hopefully soon get this sorted out so you'll get a meaningful error
 message. However, this method is faster than the other two methods in
@@ -50,8 +50,10 @@ file <- system.file("examples", "zillow_or.geojson",
 geojson_validate(x = as.location(file))
 
 # A URL
+if (interactive()) {
 url <- "https://raw.githubusercontent.com/glynnbird/usstatesgeojson/master/california.geojson"
 geojson_validate(as.location(url))
+}
 
 # toggle whether reason for validation failure is given back
 geojson_validate('{ "type": "FeatureCollection" }')
@@ -61,7 +63,7 @@ geojson_validate('{ "type": "FeatureCollection" }', inform = TRUE)
 geojson_validate('{ "type": "FeatureCollection" }')
 geojson_validate('{ "type": "FeatureCollection" }', inform = TRUE)
 if (interactive()) {
-  geojson_validate('{ "type": "FeatureCollection" }', error = TRUE)
+geojson_validate('{ "type": "FeatureCollection" }', error = TRUE)
 }
 }
 \references{
